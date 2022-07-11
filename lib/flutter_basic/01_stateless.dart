@@ -2,7 +2,7 @@
 // ignore_for_file: file_names
 
 /**
- * * Flutter: Stateless Widget
+ * * Flutter Tutorials: Stateless Widget
  *
  * ! @author Verdi Pratama <hello@verside.com>
  * ! @link https://github.com/verdipratama/flutter_idcamp/
