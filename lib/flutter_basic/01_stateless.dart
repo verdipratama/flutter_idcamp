@@ -3,6 +3,8 @@
 // ? StatelessW: StatelessWidget
 // ? Stateless Widget: Widget yang tidak dapat dirubah atau tidak akan pernah berubah.
 
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
