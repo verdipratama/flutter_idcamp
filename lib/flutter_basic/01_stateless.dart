@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
+          children: const [
             Text(
               'HELLO WORLD',
               style: TextStyle(
