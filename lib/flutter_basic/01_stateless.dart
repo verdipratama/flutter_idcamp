@@ -24,18 +24,43 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Center(
-          child: Text('Flutter IDcamp'),
+          child: Text('Flutter: IDcamp'),
         ),
       ),
-      body: const Center(
-        child: Text(
-          'Hello World',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 40.0,
-            fontWeight: FontWeight.bold,
-          ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const <Widget>[
+            Text(
+              'HELLO WORLD',
+              style: TextStyle(
+                fontSize: 40.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            CustomTexts(
+              txt: 'Welcome To The World!',
+            ),
+          ],
         ),
+      ),
+    );
+  }
+}
+
+class CustomTexts extends StatelessWidget {
+  final String txt;
+
+  const CustomTexts({Key? key, required this.txt}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      txt,
+      style: const TextStyle(
+        fontSize: 20.0,
+        color: Colors.red,
+        fontWeight: FontWeight.bold,
       ),
     );
   }
