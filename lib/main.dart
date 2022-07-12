@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'flutter_basic/02_stateful.dart';
+import 'flutter_layouts/1_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // !! CHANGE THIS HOME: !!
+      // !! CHANGE THIS HOME() !!
       home: const Home(),
     );
   }
