@@ -45,8 +45,6 @@ class _HomeState extends State<Home> {
       ),
       // !! Bottom Navigation Bar
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color.fromARGB(255, 20, 20, 20),
-        unselectedItemColor: Colors.white,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -57,11 +55,15 @@ class _HomeState extends State<Home> {
             label: 'ORDER',
           ),
         ],
+        backgroundColor: const Color.fromARGB(255, 20, 20, 20),
+        unselectedItemColor: Colors.white,
       ),
       // !! Floating Action Button
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: const Icon(Icons.plus_one),
+        child: const Icon(
+          Icons.plus_one,
+        ),
       ),
     );
   }
