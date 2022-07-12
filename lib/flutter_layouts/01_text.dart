@@ -8,10 +8,6 @@
  * ! @link https://github.com/verdipratama/flutter_idcamp/
  * ! @licence MIT
  *
- * ? importM: import material design
- * ? StatelessW: StatelessWidget
- * ? Text Widget: Teks adalah bagian yang sangat penting dari sebuah UI aplikasi mobile mana pun.
- * ? TextStyle() pada Text Widget berfungsi untuk memanipulasi jenis font, ukuran, warna, jenis font dan lainnya
  */
 
 import 'package:flutter/material.dart';

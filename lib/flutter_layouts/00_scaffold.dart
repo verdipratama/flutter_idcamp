@@ -8,8 +8,6 @@
  * ! @link https://github.com/verdipratama/flutter_idcamp/
  * ! @licence MIT
  *
- * ? importM: import material design
- * ? StatefulW: Stateful Widget
  */
 
 import 'package:flutter/material.dart';
