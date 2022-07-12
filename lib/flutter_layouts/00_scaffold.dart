@@ -30,7 +30,6 @@ class _HomeState extends State<Home> {
       // ? 2. Body
       // ? 3. Bottom Navigation Bar
       // ? 4. FLoating action button
-
       // !! Appbar
       appBar: AppBar(
         backgroundColor: Colors.black,
@@ -38,14 +37,12 @@ class _HomeState extends State<Home> {
           child: Text('IDCamp: Scaffold Widget'),
         ),
       ),
-
       // !! Body
       body: Center(
         child: FlutterLogo(
           size: MediaQuery.of(context).size.height,
         ),
       ),
-
       // !! Bottom Navigation Bar
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color.fromARGB(255, 20, 20, 20),
@@ -61,7 +58,6 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
-
       // !! Floating Action Button
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
