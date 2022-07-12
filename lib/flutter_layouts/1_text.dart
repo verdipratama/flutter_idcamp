@@ -40,7 +40,7 @@ class Home extends StatelessWidget {
           // overflow: TextOverflow.ellipsis,
           // softWrap tidak akan wrap ke bawah
           // softWrap: true,
-          // ? use TextStyle()
+          // ? menggunakan TextStyle()
           style: TextStyle(
             fontFamily: 'Poppins',
             fontSize: 25.0,
