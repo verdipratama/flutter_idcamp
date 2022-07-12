@@ -23,10 +23,10 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: const Center(
           child: Text('IDCamp: Text Widgets'),
         ),
-        backgroundColor: Colors.black,
       ),
       body: const Center(
         child: Text(

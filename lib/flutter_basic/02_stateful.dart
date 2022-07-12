@@ -36,10 +36,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: const Center(
           child: Text('IDCamp: Stateful Widget'),
         ),
-        backgroundColor: Colors.black,
       ),
       body: Center(
         child: Column(
