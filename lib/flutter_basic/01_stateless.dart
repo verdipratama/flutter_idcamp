@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Center(
-          child: Text('Flutter: IDcamp'),
+          child: Text('IDcamp: Stateless Widget'),
         ),
       ),
       body: Center(
