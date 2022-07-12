@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child: Text('IDCamp: Flutter Stateful'),
+          child: Text('IDCamp: Stateful Widget'),
         ),
         backgroundColor: Colors.black,
       ),
