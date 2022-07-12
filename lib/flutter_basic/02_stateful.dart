@@ -1,6 +1,18 @@
 // ignore_for_file: slash_for_doc_comments
 // ignore_for_file: file_names
 
+/**
+ * * Flutter Tutorials: Stateful Widget
+ *
+ * ! @author Verdi Pratama <hello@verside.com>
+ * ! @link https://github.com/verdipratama/flutter_idcamp/
+ * ! @licence MIT
+ *
+ * ? importM: import material design
+ * ? StatefulW: StatefulWidget
+ * ? Stateful Widget: Widget yang dinamis atau dapat berubah.
+ */
+
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
