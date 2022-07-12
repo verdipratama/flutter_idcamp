@@ -56,7 +56,7 @@ class CustomTexts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      txt,
+      txt.toLowerCase(),
       style: const TextStyle(
         fontSize: 20.0,
         color: Colors.red,
