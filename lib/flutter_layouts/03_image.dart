@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
           children: [
             // ? Local image
             Image.asset(
-              'assets/img/cip.png',
+              'assets/image/cip.png',
               // ? The propertyfit: BoxFit.containwill limit the whole image to defined height.
               fit: BoxFit.contain,
               height: 350.0,

@@ -63,9 +63,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+  # ! Menambahkan Image
   assets:
-    - assets/img/ # multiple image
-    # - assets/img/cip.png # one image
+    - assets/image/ # multiple image
+    # - assets/image/cip.png # one image
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -78,6 +79,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  # ! Menambahkan fonts
   fonts:
     - family: Poppins
       fonts:
