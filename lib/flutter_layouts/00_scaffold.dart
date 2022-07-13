@@ -44,6 +44,8 @@ class _HomeState extends State<Home> {
       // !! Bottom Navigation Bar
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
+          // bottomItem(Icons.home, 'HOME'),
+          // bottomItem(Icons.assessment, 'ORDER'),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'HOME',
@@ -63,6 +65,14 @@ class _HomeState extends State<Home> {
           Icons.plus_one,
         ),
       ),
+    );
+  }
+
+  // ? Extract Widget Method
+  BottomNavigationBarItem bottomItem(IconData icon, String text) {
+    return BottomNavigationBarItem(
+      icon: Icon(icon),
+      label: text,
     );
   }
 }
