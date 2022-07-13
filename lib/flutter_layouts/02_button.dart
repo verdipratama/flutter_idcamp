@@ -21,7 +21,8 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // ? 1. MENGGUNAKAN TextButton()
+            // ? 1. Menggunakan TextButton()
+            // ? 2. Menggunakan ElevatedButton()
             // ? Primary Button
             TextButton(
               onPressed: () {},
