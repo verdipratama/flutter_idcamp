@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'flutter_layouts/02_button.dart';
+import 'flutter_layouts/03_image.dart';
 
 void main() {
   runApp(const MyApp());
