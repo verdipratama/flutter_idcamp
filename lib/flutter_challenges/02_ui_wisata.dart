@@ -45,7 +45,6 @@ class Home extends StatelessWidget {
               ),
             ),
             Container(
-              // margin: const EdgeInsets.symmetric(vertical: 16.0),
               margin: const EdgeInsets.only(top: 16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -83,7 +82,7 @@ class Home extends StatelessWidget {
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(top: 16.0),
+              margin: const EdgeInsets.symmetric(vertical: 10.0),
               child: OutlinedButton(
                 onPressed: () {},
                 style: OutlinedButton.styleFrom(
