@@ -100,6 +100,9 @@ class Home extends StatelessWidget {
                 child: const Text('150 x 30'),
               ),
             ),
+
+            // ? OutlinedButton
+            OutlinedButton(onPressed: () {}, child: const Text('HIT ME')),
           ],
         ),
       ),

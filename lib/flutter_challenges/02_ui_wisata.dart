@@ -81,7 +81,17 @@ class Home extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16.0),
               ),
-            )
+            ),
+            Container(
+              margin: const EdgeInsets.only(top: 16.0),
+              child: OutlinedButton(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(width: 2.0, color: Colors.blue),
+                ),
+                child: const Text('HIT ME'),
+              ),
+            ),
           ],
         ),
       ),
