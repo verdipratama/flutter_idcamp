@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'flutter_layouts/05_rowcol.dart';
+import 'flutter_challenges/02_ui_wisata.dart';
 
 void main() {
   runApp(const MyApp());
