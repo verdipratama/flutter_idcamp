@@ -33,7 +33,6 @@ class Home extends StatelessWidget {
       ),
       body: SafeArea(
         child: Column(
-          // crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
               margin: const EdgeInsets.only(top: 16.0),
