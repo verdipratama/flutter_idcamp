@@ -21,7 +21,6 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.black,
         title: const Center(child: Text('IDCamp: Wisata')),
       ),
-      // ? SafeArea() hanya mencakup bagian badannya tanpa status bar.
       body: SafeArea(
         child: Column(
           children: <Widget>[
