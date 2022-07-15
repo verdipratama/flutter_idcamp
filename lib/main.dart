@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'flutter_layouts/07_gridview.dart';
+import 'flutter_challenges/04_grid.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const GridCountList(),
+      home: const Home(),
     );
   }
 }
