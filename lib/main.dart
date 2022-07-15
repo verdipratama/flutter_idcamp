@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_idcamp/flutter_layouts/08_flexible.dart';
+import 'package:flutter_idcamp/flutter_layouts/10_listview.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const Home(),
+      home: const ListBuilder(),
     );
   }
 }
