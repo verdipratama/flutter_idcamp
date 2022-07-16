@@ -11,7 +11,7 @@ include: package:flutter_lints/flutter.yaml
 
 analyzer:
   exclude:
-    - 'lib/dart_fundamental/**'
+    - 'lib/01_dart_fundamental/**'
 
 linter:
   # The lint rules applied to this project can be customized in the
