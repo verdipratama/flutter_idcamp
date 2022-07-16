@@ -1,3 +1,11 @@
+/**
+ * * Flutter Tutorials: List challenges
+ *
+ * ! @author Verdi Pratama <hello@verside.com>
+ * ! @link https://github.com/verdipratama/flutter_idcamp/
+ * ! @licence MIT
+ */
+
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
