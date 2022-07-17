@@ -4,6 +4,7 @@
  * ! @author Verdi Pratama <hello@verside.com>
  * ! @link https://github.com/verdipratama/flutter_idcamp/
  * ! @licence MIT
+ * ! A Stack allows you to stack elements on top of each other, with the last element in the array taking the highest prority. You can use Align, Positioned or Container to position the children of a stack.
  */
 import 'package:flutter/material.dart';
 
