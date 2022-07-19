@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.black,
         toolbarHeight: 60.0,
         elevation: 5.0,
-        leading: const Icon(Icons.account_circle_rounded),
+        leading: const Icon(Icons.arrow_back),
         title: const Text('IDCamp: Wisata'),
         actions: <Widget>[
           Container(
