@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_idcamp/flutter_challenges/01_wisata_ui/02_ui_wisata.dart';
+import 'package:flutter_idcamp/flutter_challenges/01_wisata_ui/03_ui_wisata.dart';
 
 void main() {
   runApp(const MyApp());
