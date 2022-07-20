@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 
+// ? Cara I
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -176,6 +177,222 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class HomeCntrl extends StatefulWidget {
+  const HomeCntrl({Key? key}) : super(key: key);
+
+  @override
+  State<HomeCntrl> createState() => _HomeCntrlState();
+}
+
+// ? Cara II
+// ? Menggunakan TextEditingController();
+class _HomeCntrlState extends State<HomeCntrl> {
+  final TextEditingController _controller = TextEditingController();
+
+  String _name = '';
+  bool _lightOn = false;
+  String? _language;
+  int? _value = 0;
+
+  void showSnackBar() {
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      content: Text('$_language selected'),
+      duration: const Duration(seconds: 1),
+    ));
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('IDCamp: Form V2'),
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            TextField(
+              controller: _controller,
+              decoration: const InputDecoration(
+                hintText: "Write your name here",
+                labelText: "Your name",
+              ),
+              onChanged: (value) {
+                setState(() {
+                  _name = value;
+                });
+              },
+            ),
+            const SizedBox(height: 20.0),
+            Switch(
+              value: _lightOn,
+              onChanged: (value) {
+                setState(() {
+                  _lightOn = value;
+                });
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(_lightOn ? 'Light ON' : 'Light OFF'),
+                    duration: const Duration(seconds: 1),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 20.0),
+            Container(
+              height: 60.0,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(5.0),
+                border: Border.all(color: const Color(0xff263238), width: 0.1),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 15,
+                  right: 15,
+                  left: 15,
+                  bottom: 15,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      'Dart',
+                      style: TextStyle(
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                      ),
+                    ),
+                    Radio(
+                      value: 1,
+                      groupValue: _value,
+                      onChanged: ((value) {
+                        setState(() {
+                          _value = value as int?;
+                          showSnackBar();
+                        });
+                      }),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 10.0),
+            Container(
+              height: 60.0,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(5.0),
+                border: Border.all(color: const Color(0xff263238), width: 0.1),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 15,
+                  right: 15,
+                  left: 15,
+                  bottom: 15,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      'Kotlin',
+                      style: TextStyle(
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                      ),
+                    ),
+                    Radio(
+                      value: 2,
+                      groupValue: _value,
+                      onChanged: ((value) {
+                        setState(() {
+                          _value = value as int?;
+                          showSnackBar();
+                        });
+                      }),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 10.0),
+            Container(
+              height: 60.0,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(5.0),
+                border: Border.all(color: const Color(0xff263238), width: 0.1),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 15,
+                  right: 15,
+                  left: 15,
+                  bottom: 15,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      'React.js',
+                      style: TextStyle(
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                      ),
+                    ),
+                    Radio(
+                      value: 3,
+                      groupValue: _value,
+                      onChanged: ((value) {
+                        setState(() {
+                          _value = value as int?;
+                          showSnackBar();
+                        });
+                      }),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 20.0),
+            ElevatedButton(
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: ((context) {
+                    return AlertDialog(
+                      content: Text('Hello ${_controller.text}'),
+                    );
+                  }),
+                );
+              },
+              child: const Text('Submit'),
+            ),
+            const SizedBox(height: 20.0),
+            Text(_name, style: const TextStyle(fontSize: 30.0)),
+          ],
         ),
       ),
     );
