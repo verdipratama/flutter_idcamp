@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_idcamp/04_flutter_more_know/02_navigation.dart';
+import 'package:flutter_idcamp/04_flutter_more_know/02_routing.dart';
 
 void main() {
   runApp(const MyApp());
