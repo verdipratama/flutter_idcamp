@@ -41,7 +41,7 @@ class Home extends StatelessWidget {
             const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
-                // ? Initial route
+                // ? Inisialisasi route
                 // ? Cara I Menggunakan MaterialPageRoute() ada Animationnya
                 // Route route = MaterialPageRoute(
                 //   builder: ((context) => const HomeTwo()),
