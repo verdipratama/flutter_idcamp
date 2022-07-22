@@ -10,7 +10,6 @@
  * ? Navigator.pop (): Metode pop menghapus rute paling atas dari tumpukan.
  */
 
-import 'dart:async';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -59,41 +58,6 @@ class Home extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-// ? Splash Screen
-class Splash extends StatefulWidget {
-  const Splash({Key? key}) : super(key: key);
-
-  @override
-  State<Splash> createState() => _SplashState();
-}
-
-class _SplashState extends State<Splash> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(
-      const Duration(seconds: 1),
-      () => Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          // ? Arahkan ke Home
-          builder: ((context) => const Home()),
-        ),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: FlutterLogo(
-        size: MediaQuery.of(context).size.height,
       ),
     );
   }
