@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_idcamp/04_flutter_more_know/02_routing.dart';
+import 'package:flutter_idcamp/04_flutter_more_know/03_named_routing.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,15 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const Home(),
+      // home: const Home(),
+      // ! ========================== //
+      // ! Named Routing
+      // ? Inisialisasi Named Routing
+      initialRoute: '/',
+      routes: <String, WidgetBuilder>{
+        '/': (context) => const Home(),
+        '/about': (context) => const About(),
+      },
     );
   }
 }
