@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_idcamp/04_flutter_more_know/03_named_routing.dart';
+import 'package:flutter_idcamp/flutter_challenges/route_generator/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,12 +21,23 @@ class MyApp extends StatelessWidget {
       // home: const Home(),
       // ! ========================== //
       // ! Named Routing
-      // ? Inisialisasi Named Routing
-      initialRoute: '/',
-      routes: <String, WidgetBuilder>{
-        '/': (context) => const Home(),
-        '/about': (context) => const About(),
-      },
+      // ? Inisialisasi Named Routing (MaterialPageRoute)
+      // initialRoute: '/',
+      // routes: <String, WidgetBuilder>{
+      //   '/': (context) => const Home(),
+      //   '/about': (context) => const About(),
+      // },
+      // ! ========================== //
+      // ! Named Route Generator (PageRouteBuilder)
+      // onGenerateRoute: (settings) {
+      //   if (settings.name == '/second')
+      //     return PageRouteBuilder(
+      //       pageBuilder: (_, __, ___) => SecondRoute(),
+      //     );
+      //   return null;
+      // },
+      // ! Custom Route Generator (PageRouteBuilder)
+      onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }
