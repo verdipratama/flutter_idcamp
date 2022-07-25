@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_idcamp/flutter_challenges/route_generator/routes.dart';
+import 'package:flutter_idcamp/flutter_challenges/screen_rotation/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // home: const Home(),
+      home: const Home(),
       // ! ========================== //
       // ! Named Routing
       // ? Inisialisasi Named Routing (MaterialPageRoute)
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
       //   return null;
       // },
       // ! Custom Route Generator (PageRouteBuilder)
-      onGenerateRoute: RouteGenerator.generateRoute,
+      // onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }
